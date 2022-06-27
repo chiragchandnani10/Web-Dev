@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_HTML_FORMS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-block">
+    <h1>Payment Information</h1>
+    <hr noshade="">
+    
+    <form action="Form submitted.html" method = "post" enctype="text/plain">
+        <div class="top-block">
+            <label>Name</label>
+            <br>
+            
+            
+            <input type="text" required placeholder="John Doe">
+            <br>
+            <label>Registration Number</label>
+            <br>
+            <input type="text" required placeholder="21ABC0000">
+            <br>
+            <label>Email</label>
+            <br>
+            <input type="email" name="" required placeholder="abc@xyz.com" id="">
+            <br>
+            <div class="Gender">
+            <label>Gender</label>
+            
+            <br>
+            Male<input type="radio" name="gender">
+            Female<input type="radio" name="gender">
+        </div>  
+        <br>
+            <label>Date of Birth*</label>
+            <br>
+            <input type="date"  name="" id="" required>
+            <br>
+            <label>Pincode*</label>
+            <br>
+            <input type="number" name="pincode" maxlength="6" required placeholder="000000">
+
+        
+           
+        <br>
+        <h3>Payment Info*</h3>
+        <select name="card-type" id="" required>
+            <option value="">Select-a-card-type</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="rupay">Rupay</option>
+        </select>
+
+
+        <br>
+        <label>CVV*</label>
+        <br>
+        <input type="password" required placeholder="123" maxlength="3">
+        <br>
+        <label>Expiry Date*</label>
+        <br>
+        <input type="date" required>
+        <br>
+        <label>Message</label>
+        <br>
+        <textarea name="Yourmessage" id="" cols="50" rows="2"></textarea>
+        <br>
+        <label>Do you want this information to be stored for future use?</label>
+        <br>
+        <input type="checkbox" name="" id="">
+        <br>
+        </div>
+        <input type = "submit" value = "Pay Now" placeholder="Pay Now">
+        
+    </form>
+</body>
+</html>
